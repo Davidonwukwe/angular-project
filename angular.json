@@ -25,8 +25,11 @@
             ],
             "styles": [
               "src/styles.css"
+
             ],
-            "scripts": []
+            "scripts": [
+
+            ]
           },
           "configurations": {
             "production": {
@@ -119,6 +122,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "movie-search"
+    }
+  },
+  "defaultProject": "movie-search",
+  "cli": {
+    "analytics": false
+  }
 }
