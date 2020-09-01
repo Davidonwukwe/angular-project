@@ -89,7 +89,7 @@ input[type='text'] {
 	width: 100%;
 	height: 100%;
 }
-li .img {
+.movie-item .img {
 	border-radius: 2% 2% 0 0;
 }
 .dCover {
@@ -196,7 +196,7 @@ li .img {
 	justify-content: space-between;
 	margin-top: 5%;
 }
-#mainUl li {
+#mainUl .movie-item {
 	width: 30%;
 	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 	transition: 0.3s;
@@ -204,7 +204,7 @@ li .img {
 	margin-bottom: 2%;
 	overflow: hidden;
 }
-#mainUl li:hover {
+#mainUl .movie-item:hover {
 	box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
 }
 #mainUl p {
