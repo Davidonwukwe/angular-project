@@ -1,17 +1,9 @@
 <div class="wrapper">
   <div class="container">
-      <h2 id="name"><a href="/">The Movie Search</a></h2>
-
-
-          
+      <h2 id="name"><a href="/">The Movie Search</a></h2> 
       
-      <app-search-bar></app-search-bar>
-  <div>
-          <ul id="mainUl">
-  
-          </ul>
-      <div class="errorCon">
-          
-      </div>
+      <app-search-bar (searchEvent)="receiveMovies($event)"></app-search-bar>
+      <app-search-results id="mainUl" [allMovies]="allMovies"></app-search-results>
+ </div>
 
 </div>
