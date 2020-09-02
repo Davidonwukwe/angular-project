@@ -10,6 +10,7 @@ import { SearchResultsComponent } from './components/search-results/search-resul
 import { MovieItemComponent } from './components/movie-item/movie-item.component';
 import { HeaderComponent } from './components/header/header.component';
 import { MovieInformationComponent } from './components/pages/movie-information/movie-information.component';
+import { MovieSearchComponent } from './components/pages/movie-search/movie-search.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { MovieInformationComponent } from './components/pages/movie-information/
     SearchResultsComponent,
     MovieItemComponent,
     HeaderComponent,
-    MovieInformationComponent
+    MovieInformationComponent,
+    MovieSearchComponent
   ],
   imports: [
     BrowserModule,
