@@ -8,13 +8,17 @@ import { AppComponent } from './app.component';
 import { SearchBarComponent } from './components/search-bar/search-bar.component';
 import { SearchResultsComponent } from './components/search-results/search-results.component';
 import { MovieItemComponent } from './components/movie-item/movie-item.component';
+import { HeaderComponent } from './components/header/header.component';
+import { MovieInformationComponent } from './components/pages/movie-information/movie-information.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     SearchBarComponent,
     SearchResultsComponent,
-    MovieItemComponent
+    MovieItemComponent,
+    HeaderComponent,
+    MovieInformationComponent
   ],
   imports: [
     BrowserModule,
