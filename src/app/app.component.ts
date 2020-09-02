@@ -7,12 +7,12 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'movie-search';
-  allMovies = [];
+  searchterm:string;
 
 
-  receiveMovies($event) {
-    this.allMovies = $event
+  receiveSearch($event) {
+    this.searchterm = $event
     console.log("this is from app");
-    console.log(this.allMovies);
+    console.log(`The search term is ${this.searchterm}`);
   }
 }

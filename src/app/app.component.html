@@ -2,8 +2,8 @@
   <div class="container">
       <h2 id="name"><a href="/">The Movie Search</a></h2> 
       
-      <app-search-bar (searchEvent)="receiveMovies($event)"></app-search-bar>
-      <app-search-results id="mainUl" [allMovies]="allMovies"></app-search-results>
+      <app-search-bar (searchEvent)="receiveSearch($event)"></app-search-bar>
+      <app-search-results id="mainUl"  [searchterm]="searchterm"></app-search-results>
  </div>
 
 </div>
