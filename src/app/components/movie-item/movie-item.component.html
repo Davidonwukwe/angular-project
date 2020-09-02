@@ -1,11 +1,12 @@
 <div class="dImage">
-    <a href="./results.html?id={{imdbID}}">
+    <a [routerLink]="['/movie']" [queryParams]= "{ id: imdbID }">
         <img class="img" src={{Poster}} alt= "Image of {{Title}}">
     </a>
 </div>
     
     <p>
-        <a href="./movie?id={{imdbID}}" class="movie">{{Title}}, {{Year}}</a>`
+        <!-- <a routerLink="/movie?id={{imdbID}}" class="movie">{{Title}}, {{Year}}</a> -->
+        <a [routerLink]="['/movie']" [queryParams]= "{ id: imdbID }" class="movie">{{Title}}, {{Year}}</a>
 
     </p>
     

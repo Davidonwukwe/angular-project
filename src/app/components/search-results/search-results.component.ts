@@ -21,9 +21,15 @@ test = 3;
       if(this.searchterm){
          this.service.getMovies(this.searchterm)
         .subscribe(data=>{
+
           this.allMovies = data.Search;
+          if(data.error){
+            console.log("There is an error");
+          }
+          
           
         })
+        
       }
      
       

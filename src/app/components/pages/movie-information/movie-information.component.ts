@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ActivatedRoute } from '@angular/router';
 
 @Component({
   selector: 'app-movie-information',
@@ -6,10 +7,17 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./movie-information.component.css']
 })
 export class MovieInformationComponent implements OnInit {
+imdbId:string;
 
-  constructor() { }
+  constructor(private route: ActivatedRoute) { }
 
   ngOnInit(): void {
+    this.route.queryParams
+    .subscribe(params=> {
+      this.imdbId = params.id;
+      console.log(this.imdbId);
+    })
+
   }
 
 }
