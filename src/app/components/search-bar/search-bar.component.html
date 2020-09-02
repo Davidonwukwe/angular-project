@@ -1,4 +1,4 @@
-<form class='form'>
+<form class='form' (ngSubmit)="onSubmit()">
     <input id="myInput" type = "text" name="searchterm" [(ngModel)]="searchterm" placeholder="Movie">   
    
     <input id="submit" type ="submit" value="Search">
