@@ -9,6 +9,7 @@ import { movieData } from '../../models/movieData'
 export class SearchResultsComponent implements OnChanges, OnInit {
 @Input() searchterm:string;
 allMovies:movieData;
+isError:Boolean = false;
 test = 3;
 
   constructor(private service: MovieServiceService) { }
@@ -23,17 +24,23 @@ test = 3;
         .subscribe(data=>{
 
           this.allMovies = data.Search;
-          if(data.error){
-            console.log("There is an error");
-          }
+        
           
+        }, error=>{ if(error){
+          console.log("There is an error");
+          this.isError = true;
+        } else {
+          this.isError = false;
+
+        }
           
+        
+        
         })
+        
         
       }
      
-      
-
     }
   
   

@@ -5,8 +5,6 @@
 </div>
     
     <p>
-        <!-- <a routerLink="/movie?id={{imdbID}}" class="movie">{{Title}}, {{Year}}</a> -->
         <a [routerLink]="['/movie']" [queryParams]= "{ id: imdbID }" class="movie">{{Title}}, {{Year}}</a>
-
     </p>
     

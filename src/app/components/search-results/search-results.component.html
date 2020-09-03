@@ -1,5 +1,5 @@
 
 <app-movie-item class="movie-item" *ngFor='let movie of allMovies' [movie]="movie"></app-movie-item>
-<div class="errorCon">
+<div *ngIf = "isError" class="errorReport"><h2>Sorry, something went wrong, check your internet connection</h2></div>
     
-</div>
+
