@@ -186,7 +186,7 @@ input[type='text'] {
 	width: 80%;
 }
 #myInput {
-	width: 96%;
+	width: 90.5%;
 	outline: none;
 }
 #mainUl {
@@ -219,6 +219,9 @@ input[type='text'] {
 }
 #downSection * {
 	line-height: 2;
+}
+.errorReport h2 {
+	color: red;
 }
 
 /* @media screen and (max-width: 800px) {

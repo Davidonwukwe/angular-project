@@ -1,0 +1,18 @@
+<div class = "dCover">
+    <div class = "imgdiv">
+            <img src="{{Poster}}" class="img" alt= "Image of {{Title}}">
+        </div>
+        <div class="sidePane">
+            <ul>
+                
+                <li><h3>Genre: {{Genre}}</h3></li>
+                <li><h3>Released: {{Year}} ({{Country}})</h3></li>
+                <li><h3>Rated: {{Rated}}</h3></li>
+                <li><h3>Runtime: {{Runtime}}</h3></li>
+                <li><h3>IMDB Rating: {{imdbRating}}/10</h3></li>
+                <li *ngIf = "Ratings[1]"><h3>{{Ratings[1].Source}}: {{Ratings[1].Value}}</h3></li>
+                
+            </ul>                
+        </div>
+        
+    </div>
