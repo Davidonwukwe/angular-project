@@ -13,28 +13,28 @@ export class MovieInformationComponent implements OnInit {
 imdbId:string;
 movieInfo:movieSpec;
 isError:Boolean = false;
+loading:Boolean = false;
 
   constructor(private route: ActivatedRoute, private service: MovieServiceService) { }
 
   ngOnInit(): void {
+    this.loading= true;
+
+
     this.route.queryParams
     .subscribe(params=> {
       this.imdbId = params.id;
-      console.log(this.imdbId);
-    
       this.service.getMovieInfo(this.imdbId)
      .subscribe(data=>{
 
       this.movieInfo = data;
-       console.log("//////////");
-       console.log(this.movieInfo);
+      this.loading=false;
+      this.isError=false;
+      
      }, error=>{ if(error){
        console.log("David see the error" + error);
        this.isError = true;
-     } else {
-      this.isError = false;
-
-     }
+     } 
         
      })
     })
