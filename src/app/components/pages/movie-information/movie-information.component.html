@@ -1,5 +1,13 @@
-<div class="resultContainer">
-    <div class="heading"></div>
+<div  class="container resultContainer">
+    <app-header></app-header>
+    <div *ngIf ="movieInfo">
+        <app-movie-head [movieInfo]="movieInfo"></app-movie-head>
+        <app-movie-cover [movieInfo]="movieInfo" ></app-movie-cover>
+        <app-info-section [movieInfo]="movieInfo"></app-info-section>
+    </div>
+    
+    <div *ngIf = "isError" class="errorReport"><h2>Sorry, something went wrong, check your internet connection</h2> </div>
 </div>
-<div class="errorCon"></div>
+
+
     

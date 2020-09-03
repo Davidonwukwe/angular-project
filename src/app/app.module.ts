@@ -11,6 +11,9 @@ import { MovieItemComponent } from './components/movie-item/movie-item.component
 import { HeaderComponent } from './components/header/header.component';
 import { MovieInformationComponent } from './components/pages/movie-information/movie-information.component';
 import { MovieSearchComponent } from './components/pages/movie-search/movie-search.component';
+import { MovieHeadComponent } from './components/movie-head/movie-head.component';
+import { MovieCoverComponent } from './components/movie-cover/movie-cover.component';
+import { InfoSectionComponent } from './components/info-section/info-section.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +23,10 @@ import { MovieSearchComponent } from './components/pages/movie-search/movie-sear
     MovieItemComponent,
     HeaderComponent,
     MovieInformationComponent,
-    MovieSearchComponent
+    MovieSearchComponent,
+    MovieHeadComponent,
+    MovieCoverComponent,
+    InfoSectionComponent
   ],
   imports: [
     BrowserModule,
