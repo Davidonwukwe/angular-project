@@ -189,12 +189,16 @@ input[type='text'] {
 	width: 90.5%;
 	outline: none;
 }
-#mainUl {
+#mainUl h3 {
+	margin: 3% 0 2% 0;
+}
+
+#mainUl .moviesContainer {
 	width: 100%;
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-between;
-	margin-top: 5%;
+	
 }
 #mainUl .movie-item {
 	width: 30%;

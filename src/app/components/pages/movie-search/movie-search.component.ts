@@ -14,8 +14,8 @@ export class MovieSearchComponent implements OnInit {
   searchterm:string;
 
 
-  receiveSearch($event) {
-    this.searchterm = $event
+  receiveSearch(event: any) {
+    this.searchterm = event
     console.log("this is from app");
     console.log(`The search term is ${this.searchterm}`);
   }
