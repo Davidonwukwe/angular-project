@@ -3,8 +3,11 @@
         <img class="img" src={{Poster}} alt= "Image of {{Title}}">
     </a>
 </div>
-    
-    <p>
+<div class="dText">
+     <p>
         <a [routerLink]="['/movie']" [queryParams]= "{ id: imdbID }" class="movie">{{Title}}, {{Year}}</a>
     </p>
     
+</div>
+    
+   
